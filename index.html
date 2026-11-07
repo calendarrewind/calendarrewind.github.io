@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Calendar Rewind</title>
+  <meta name="description" content="Privacy Policy for Calendar Rewind, an iOS app that helps you rediscover experiences from your calendar history.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Sora:wght@500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #1a1f24;
+      --ink-soft: #3d4650;
+      --muted: #5c6670;
+      --line: rgba(26, 31, 36, 0.1);
+      --surface: rgba(255, 255, 255, 0.72);
+      --accent: #6b46c1;
+      --accent-deep: #542f9e;
+      --accent-soft: rgba(107, 70, 193, 0.12);
+      --bg-1: #f3eef8;
+      --bg-2: #f7f4f0;
+      --bg-3: #ece6f6;
+      --shadow: 0 24px 60px rgba(26, 31, 36, 0.08);
+      --radius: 20px;
+      --max: 42rem;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: "Manrope", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(ellipse 80% 50% at 10% -10%, rgba(107, 70, 193, 0.16), transparent 55%),
+        radial-gradient(ellipse 70% 45% at 100% 0%, rgba(140, 100, 200, 0.12), transparent 50%),
+        linear-gradient(165deg, var(--bg-1) 0%, var(--bg-2) 48%, var(--bg-3) 100%);
+      background-attachment: fixed;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      opacity: 0.35;
+      background-image:
+        linear-gradient(rgba(26, 31, 36, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(26, 31, 36, 0.03) 1px, transparent 1px);
+      background-size: 48px 48px;
+      mask-image: radial-gradient(ellipse 70% 60% at 50% 20%, black, transparent);
+    }
+
+    .page {
+      position: relative;
+      width: min(100% - 2rem, var(--max));
+      margin: 0 auto;
+      padding: 3.5rem 0 5rem;
+      animation: rise 0.7s ease-out both;
+    }
+
+    @keyframes rise {
+      from {
+        opacity: 0;
+        transform: translateY(14px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    header {
+      margin-bottom: 2.75rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .brand {
+      display: inline-block;
+      font-family: "Sora", sans-serif;
+      font-size: clamp(2.25rem, 6vw, 3rem);
+      font-weight: 600;
+      letter-spacing: -0.04em;
+      line-height: 1.1;
+      color: var(--ink);
+      margin-bottom: 1.25rem;
+      animation: rise 0.8s 0.05s ease-out both;
+    }
+
+    .brand span {
+      color: var(--accent);
+    }
+
+    h1 {
+      font-family: "Sora", sans-serif;
+      font-size: clamp(1.55rem, 4vw, 1.9rem);
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      line-height: 1.25;
+      margin-bottom: 0.65rem;
+      animation: rise 0.8s 0.12s ease-out both;
+    }
+
+    .updated {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--muted);
+      animation: rise 0.8s 0.18s ease-out both;
+    }
+
+    .updated::before {
+      content: "";
+      width: 0.45rem;
+      height: 0.45rem;
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 0 4px var(--accent-soft);
+    }
+
+    .intro {
+      font-size: 1.05rem;
+      color: var(--ink-soft);
+      margin-bottom: 2.5rem;
+      animation: rise 0.8s 0.22s ease-out both;
+    }
+
+    main {
+      display: grid;
+      gap: 1.35rem;
+      animation: rise 0.85s 0.28s ease-out both;
+    }
+
+    section {
+      background: var(--surface);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.65);
+      border-radius: var(--radius);
+      padding: 1.45rem 1.5rem 1.55rem;
+      box-shadow: var(--shadow);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    section:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 28px 64px rgba(26, 31, 36, 0.1);
+    }
+
+    h2 {
+      font-family: "Sora", sans-serif;
+      font-size: 1.15rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      margin-bottom: 0.7rem;
+    }
+
+    p {
+      color: var(--ink-soft);
+      font-size: 0.98rem;
+      margin-bottom: 0.85rem;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    a {
+      color: var(--accent);
+      font-weight: 600;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(107, 70, 193, 0.35);
+      transition: color 0.2s ease, border-color 0.2s ease;
+    }
+
+    a:hover {
+      color: var(--accent-deep);
+      border-bottom-color: var(--accent-deep);
+    }
+
+    footer {
+      margin-top: 2.75rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--line);
+      font-size: 0.875rem;
+      color: var(--muted);
+      text-align: center;
+      animation: rise 0.8s 0.35s ease-out both;
+    }
+
+    @media (max-width: 560px) {
+      .page {
+        width: min(100% - 1.25rem, var(--max));
+        padding: 2.25rem 0 3.5rem;
+      }
+
+      section {
+        padding: 1.2rem 1.15rem 1.3rem;
+        border-radius: 16px;
+      }
+
+      section:hover {
+        transform: none;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        animation: none !important;
+        transition: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="brand">Calendar <span>Rewind</span></div>
+      <h1>Privacy Policy</h1>
+      <p class="updated">Last updated: November 6, 2026</p>
+    </header>
+
+    <p class="intro">
+      Calendar Rewind is an iOS app that helps you rediscover experiences from your calendar history, including dining, travel, entertainment, hobbies, and celebrations. We believe your calendar history and personal experiences should remain private.
+    </p>
+
+    <main>
+      <section>
+        <h2>Calendar Access</h2>
+        <p>
+          With your permission, Calendar Rewind accesses your device's calendars to identify past experiences and display personalized insights and historical summaries.
+        </p>
+        <p>
+          This includes information such as event titles, dates, locations, notes, calendar details, and participation status.
+        </p>
+        <p>
+          Calendar Rewind requests Full Access to your calendars, but only reads calendar information. The app does not create, edit, or delete calendar events.
+        </p>
+      </section>
+
+      <section>
+        <h2>Data Collection and Storage</h2>
+        <p>
+          Calendar Rewind does not collect your personal information or upload your calendar events or generated insights to developer-operated servers.
+        </p>
+        <p>
+          All calendar analysis is performed on your device using locally stored reference data.
+        </p>
+        <p>
+          Certain information, including your selected calendar, decisions to confirm or dismiss recognized experiences, and review preferences, is stored locally to support app features. These decisions may include calendar event identifiers.
+        </p>
+        <p>
+          Calendar event contents and generated insights are not permanently stored by the app.
+        </p>
+      </section>
+
+      <section>
+        <h2>Analytics and Sharing</h2>
+        <p>
+          Calendar Rewind does not contain advertisements, third-party analytics, or tracking software.
+        </p>
+        <p>
+          Your calendar information and generated insights are not automatically shared with other apps or third parties.
+        </p>
+        <p>
+          The app includes optional links to external websites for data attribution. These websites are subject to their own privacy practices.
+        </p>
+      </section>
+
+      <section>
+        <h2>Your Privacy Choices</h2>
+        <p>
+          You can revoke Calendar Rewind's calendar access through your device's Settings.
+        </p>
+        <p>
+          Revoking calendar access clears calendar information and generated insights held in the app's memory, but does not automatically delete locally stored preferences or review decisions.
+        </p>
+        <p>
+          Deleting Calendar Rewind removes its locally stored app data from your device. Your original calendar events remain unchanged, and older device backups may retain copies of some app data.
+        </p>
+        <p>
+          Calendar Rewind does not require an account.
+        </p>
+      </section>
+
+      <section>
+        <h2>Changes to This Policy</h2>
+        <p>
+          We may update this Privacy Policy as the app evolves. Any updates will be reflected on this page.
+        </p>
+      </section>
+
+      <section>
+        <h2>Contact</h2>
+        <p>
+          If you have questions about this Privacy Policy, contact us at:
+        </p>
+        <p>
+          <a href="mailto:safmobilehelp@gmail.com">safmobilehelp@gmail.com</a>
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      © 2026 Calendar Rewind
+    </footer>
+  </div>
+</body>
+</html>
